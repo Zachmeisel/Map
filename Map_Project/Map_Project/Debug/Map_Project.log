@@ -1,6 +1,6 @@
-﻿  Source.cpp
+﻿  Test.cpp
+  Source.cpp
   Map.cpp
   Generating Code...
-Source.obj : error LNK2019: unresolved external symbol "public: __thiscall Map<int>::Map<int>(void)" (??0?$Map@H@@QAE@XZ) referenced in function _main
-Source.obj : error LNK2019: unresolved external symbol "public: __thiscall Map<int>::~Map<int>(void)" (??1?$Map@H@@QAE@XZ) referenced in function _main
-C:\Users\Zach\Documents\Visual Studio 2015\Projects\Map_Project\Debug\Map_Project.exe : fatal error LNK1120: 2 unresolved externals
+  Map_Project.vcxproj -> C:\Users\zmeisel.LRC.000\Source\Repos\Map\Map_Project\Debug\Map_Project.exe
+  Map_Project.vcxproj -> C:\Users\zmeisel.LRC.000\Source\Repos\Map\Map_Project\Debug\Map_Project.pdb (Partial PDB)
