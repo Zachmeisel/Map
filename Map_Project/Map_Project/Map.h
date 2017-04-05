@@ -18,7 +18,7 @@ public:
 	size_t h_key;
 
 private:
-	Map *next;
+	Map *next = NULL;
 	valueType stored;
 
 };

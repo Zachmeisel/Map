@@ -35,10 +35,12 @@ bool Map<valueType>::insert(std::string key, valueType value)
 
 		head = n;
 
+		
 		return true;
 	}
 	else
 	{
+	
 		return false;
 	}
 
@@ -46,17 +48,92 @@ bool Map<valueType>::insert(std::string key, valueType value)
 }
 template <class valueType> valueType Map<valueType>::get(std::string key)
 {
+	std::hash<std::string> str_hash;
+	Map * checker = new Map;
+	Map * temp = new Map;
+	checker = head;
+	if (check(key) == true)
+	{
+		while (true)
+		{
+			if (checker->h_key == str_hash(key))
+			{
+				return checker->stored;
+			}
+			else
+			{
+				temp = checker;
+				checker = temp->next;
+			}
+		}
+	}
+	else
+	{
+		return NULL;
+	}
+	
 	
 }
 
 template <class valueType> bool Map<valueType>::remove(std::string key)
 {
+	std::hash<std::string> str_hash;
+	Map * checker = new Map;
+	Map * previous = new Map;
+	Map * temp = new Map;
+	previous = head;
+	checker = head;
+	if (check(key) == true)
+	{
+		while (true)
+		{
+			if (checker->h_key == str_hash(key))
+			{
+				temp = checker->next;
+				previous->next = temp;
+				checker = temp;
+				return true;
+			}
+			else
+			{
+				temp = checker;
+				previous = checker;
+				checker = temp->next;
+			}
+		}
+	}
+	else
+	{
+		return false;
+	}
 
 }
 
 template <class valueType> int Map<valueType>::size()
 {
-	
+	int ret =0;
+	Map * checker = new Map;
+	Map * temp = new Map;
+	checker = head;
+
+	while (true)
+	{
+		if (checker != NULL)
+		{
+			ret++;
+			if (checker->next != NULL)
+			{
+				temp = checker;
+				checker = temp->next;
+			}
+			else
+			{
+				return ret;
+			}
+		}
+		
+	}
+	return ret;
 }
 template <class valueType> bool Map<valueType>::check(std::string key)
 {
@@ -83,7 +160,7 @@ template <class valueType> bool Map<valueType>::check(std::string key)
 				{
 					return true;
 				}
-				else if(checker = NULL)
+				else if(checker == NULL || checker->next == NULL)
 				{
 					return false;
 				}

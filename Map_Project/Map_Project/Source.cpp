@@ -28,11 +28,14 @@ int main(void)
 	Map<Test*> Val_ptr;
 
 	Val_int.insert(a,b);
-	Val_int.insert(a, b);
 	Val_int.insert("hi", 42);
 	Val_int.insert("12", 42);
+	//Val_int.remove("hi");
+	Val_int.get("poop");
+	std::cout << Val_int.size();
 	Val_int.insert("34", 42);
 	Val_int.insert("56", 42);
-
+	
+	std::cin.get();
 }
 
