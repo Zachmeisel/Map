@@ -14,7 +14,7 @@ public:
 	int size();					//returns number of elements stored in the map
 
 	Map *head = NULL;
-	Map *end;
+	//Map *end;
 	size_t h_key;
 
 private:

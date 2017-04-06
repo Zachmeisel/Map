@@ -1,13 +1,17 @@
 #include "Map.h"
+#include "Heads.h"
 #include <string>
 #include <iostream>
 #include <algorithm>
 #include <functional>
 
+
+//Heads *head = NULL;
+
 template <typename valueType> 
 Map<valueType>::Map()
 {
-	//head = NULL;
+	
 	
 }
 
@@ -35,12 +39,12 @@ bool Map<valueType>::insert(std::string key, valueType value)
 
 		head = n;
 
-		
+		//std::cout << "Item inserted" << std::endl;
 		return true;
 	}
 	else
 	{
-	
+		std::cout <<"The password is already used" << std::endl;
 		return false;
 	}
 
@@ -69,6 +73,7 @@ template <class valueType> valueType Map<valueType>::get(std::string key)
 	}
 	else
 	{
+		std::cout << "Item not found" << std::endl;
 		return NULL;
 	}
 	
@@ -92,6 +97,8 @@ template <class valueType> bool Map<valueType>::remove(std::string key)
 				temp = checker->next;
 				previous->next = temp;
 				checker = temp;
+				//head = checker;
+				std::cout << "Item Removed" << std::endl;
 				return true;
 			}
 			else
@@ -104,6 +111,7 @@ template <class valueType> bool Map<valueType>::remove(std::string key)
 	}
 	else
 	{
+		std::cout << "Item not found/already removed" << std::endl;
 		return false;
 	}
 
@@ -146,8 +154,10 @@ template <class valueType> bool Map<valueType>::check(std::string key)
 	else
 	{
 		Map * checker = new Map;
+		Map * keep = new Map;
 		Map * temp = new Map;
 		checker = head;
+		keep = head;
 		if (checker == NULL)
 		{
 			return false;
