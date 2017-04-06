@@ -1,36 +1,7 @@
-﻿  Source.cpp
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(39): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(46): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(50): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(54): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(62): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(66): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(70): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(74): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(78): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(82): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(86): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(90): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(94): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(98): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(102): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(106): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(110): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(114): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(118): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(122): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(126): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(130): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(134): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(138): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(142): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(146): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(150): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(154): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(158): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(162): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(166): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(170): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\zach\source\repos\map\map_project\map_project\source.cpp(203): warning C4305: 'argument': truncation from 'double' to 'float'
-  Map_Project.vcxproj -> C:\Users\Zach\Source\Repos\Map\Map_Project\Debug\Map_Project.exe
-  Map_Project.vcxproj -> C:\Users\Zach\Source\Repos\Map\Map_Project\Debug\Map_Project.pdb (Partial PDB)
+﻿cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
+  Source.cpp
+c:\users\zmeisel.lrc.000\source\repos\map\map_project\map_project\source.cpp(64): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\zmeisel.lrc.000\source\repos\map\map_project\map_project\source.cpp(94): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\zmeisel.lrc.000\source\repos\map\map_project\map_project\source.cpp(106): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Map_Project.vcxproj -> C:\Users\zmeisel.LRC.000\Source\Repos\Map\Map_Project\Debug\Map_Project.exe
+  Map_Project.vcxproj -> C:\Users\zmeisel.LRC.000\Source\Repos\Map\Map_Project\Debug\Map_Project.pdb (Partial PDB)

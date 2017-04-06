@@ -1,5 +1,5 @@
 #include "Map.h"
-#include "Heads.h"
+
 #include <string>
 #include <iostream>
 #include <algorithm>
@@ -62,6 +62,8 @@ template <class valueType> valueType Map<valueType>::get(std::string key)
 		{
 			if (checker->h_key == str_hash(key))
 			{
+				checker->uses++;
+				sort();
 				return checker->stored;
 			}
 			else
@@ -182,4 +184,51 @@ template <class valueType> bool Map<valueType>::check(std::string key)
 			}
 		}
 	}
+}
+
+template <class valueType> void Map<valueType>::sort()
+{
+	int size1 = size();
+
+	Map * conduct = new Map;
+	Map * prev = new Map;
+
+	Map * swapper = new Map;
+	Map * currentswap = new Map;
+	Map * lastswap = new Map;
+
+	while (size1--)
+	{
+		conduct = head;
+		prev = NULL;
+
+		
+		while (conduct->next != NULL)
+		{
+			swapper = conduct->next;
+			if (conduct->uses > swapper->uses)
+			{
+				conduct->next = swapper->next;
+				swapper->next = conduct;
+				if (prev == NULL)
+				{
+					head = swapper;
+				}
+				else
+				{
+					prev->next = swapper;
+				}
+				prev = swapper;
+				currentswap = conduct;
+			}
+			else
+			{
+				prev = conduct;
+				conduct = conduct->next;
+			}
+		}
+	}
+
+	
+
 }

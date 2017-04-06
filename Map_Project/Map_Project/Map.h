@@ -11,13 +11,17 @@ public:
 	bool check(std::string);
 	valueType get(std::string );			//returns the value associated with the specified key
 	bool remove(std::string );			//removes the value with the associated key
+	void sort();
 	int size();					//returns number of elements stored in the map
 
 	Map *head = NULL;
 	//Map *end;
 	size_t h_key;
 
+	
+
 private:
+	int uses = 0;
 	Map *next = NULL;
 	valueType stored;
 
